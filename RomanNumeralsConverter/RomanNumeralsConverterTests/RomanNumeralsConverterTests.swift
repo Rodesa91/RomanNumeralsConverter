@@ -23,6 +23,8 @@ class RomanNumeralsConverterTests: XCTestCase {
         super.tearDown()
     }
     
+    // MARK: Test for convert from decimal to roman number
+    
     func testConversionForOne() {
         let result = converter.convertToRoman(1)
         XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
@@ -72,4 +74,62 @@ class RomanNumeralsConverterTests: XCTestCase {
         let result = converter.convertToRoman(3999)
         XCTAssertEqual(result, "MMMCMXCIX", "Conversion for 3999 is incorrect")
     }
+    
+    
+    // MARK: Test for convert from roman number to decimal
+    func testConversionForI() {
+        let result = converter.convertToDecimal("I")
+        XCTAssertEqual(result, 1, "Conversion for I is incorrect")
+    }
+    func testConversionForII() {
+        let result = converter.convertToDecimal("II")
+        XCTAssertEqual(result, 2, "Conversion for II is incorrect")
+    }
+    
+    func testConversionForV() {
+        let result = converter.convertToDecimal("V")
+        XCTAssertEqual(result, 5, "Conversion for V is incorrect")
+    }
+    
+    func testConversionForVI() {
+        let result = converter.convertToDecimal("VI")
+        XCTAssertEqual(result, 6, "Conversion for VI is incorrect")
+    }
+    
+    func testConversionForX() {
+        let result = converter.convertToDecimal("X")
+        XCTAssertEqual(result, 10, "Conversion for X is incorrect")
+    }
+
+    func testConversionForXX() {
+        let result = converter.convertToDecimal("XX")
+        XCTAssertEqual(result, 20, "Conversion for XX is incorrect")
+    }
+    
+    func testConversionForIV() {
+        let result = converter.convertToDecimal("IV")
+        XCTAssertEqual(result, 4, "Conversion for IV is incorrect")
+    }
+    
+    func testConversionForIX() {
+        let result = converter.convertToDecimal("IX")
+        XCTAssertEqual(result, 9, "Conversion for IX is incorrect")
+    }
+    
+    func testConverstionForZeroRoman() {
+        let result = converter.convertToDecimal("")
+        XCTAssertEqual(result, 0, "Conversion for 0 is incorrect")
+    }
+    
+    func testConverstionForMMMCMXCIX() {
+        let result = converter.convertToDecimal("MMMCMXCIX")
+        XCTAssertEqual(result, 3999, "Conversion for MMMCMXCIX is incorrect")
+    }
+
+
+    func testConverstionForABII() {
+        let result = converter.convertToDecimal("ABII")
+        XCTAssertEqual(result, -1, "Conversion for ABII is incorrect")
+    }
+
 }

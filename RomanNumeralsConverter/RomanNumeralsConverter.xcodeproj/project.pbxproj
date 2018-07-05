@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B19FBB520EEC9E100976766 /* Trajan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B19FBB420EEC9E100976766 /* Trajan-Regular.ttf */; };
 		5B6173D820CD9E8E004547B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6173D720CD9E8E004547B3 /* AppDelegate.swift */; };
 		5B6173DA20CD9E8E004547B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6173D920CD9E8E004547B3 /* ViewController.swift */; };
 		5B6173DD20CD9E8E004547B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6173DB20CD9E8E004547B3 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B19FBB420EEC9E100976766 /* Trajan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trajan-Regular.ttf"; sourceTree = "<group>"; };
 		5B6173D420CD9E8E004547B3 /* RomanNumeralsConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomanNumeralsConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6173D720CD9E8E004547B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6173D920CD9E8E004547B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B19FBB320EEC9BF00976766 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5B19FBB420EEC9E100976766 /* Trajan-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		5B6173CB20CD9E8E004547B3 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 				5B6173F920CD9EA4004547B3 /* Code */,
 				5B6173F820CD9E9F004547B3 /* Assets */,
 				5B6173F720CD9E97004547B3 /* Nibs */,
+				5B19FBB320EEC9BF00976766 /* Fonts */,
 				5B6173E320CD9E8E004547B3 /* Info.plist */,
 			);
 			path = RomanNumeralsConverter;
@@ -231,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6173E220CD9E8E004547B3 /* LaunchScreen.storyboard in Resources */,
+				5B19FBB520EEC9E100976766 /* Trajan-Regular.ttf in Resources */,
 				5B6173DF20CD9E8E004547B3 /* Assets.xcassets in Resources */,
 				5B6173DD20CD9E8E004547B3 /* Main.storyboard in Resources */,
 			);

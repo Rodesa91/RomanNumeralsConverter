@@ -5,10 +5,23 @@
 //  Created by Rodrigo de Santiago on 10/6/18.
 //  Copyright © 2018 Rodrigo de Santiago. All rights reserved.
 //
-
+import Foundation
 
 class Converter {
+    
+    func validRoman(_ number: String) -> Bool {
+        let regEx = "^(?=[MDCLXVI])M*(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$"
+        let predicate = NSPredicate(format:"SELF MATCHES %@", regEx)
+        return predicate.evaluate(with: number)
+    }
 
+    func validDecimal(_ number: String) -> Bool {
+        if Int(number) != nil {
+            return true
+        }
+        return false
+    }
+    
     func convertToRoman(_ number: Int) -> String {
         var localNumber = number
         var result = ""

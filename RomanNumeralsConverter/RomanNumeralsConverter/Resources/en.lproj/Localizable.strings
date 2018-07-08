@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  RomanNumeralsConverter
+
+  Created by Rodrigo de Santiago on 8/7/18.
+  Copyright © 2018 Rodrigo de Santiago. All rights reserved.
+*/
+
+"Arabic" = "Arabic";
+"Roman" = "Roman";
+"Enter a valid roman number" = "Enter a valid roman number";
+"Enter a valid number" = "Enter a valid number";

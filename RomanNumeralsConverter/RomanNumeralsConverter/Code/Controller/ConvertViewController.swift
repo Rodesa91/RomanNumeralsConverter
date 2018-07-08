@@ -26,8 +26,8 @@ class ConvertViewController: UIViewController {
     
     @IBAction func switchConverter(_ sender: Any) {
         self.convertFromRoman = !self.convertFromRoman
-        self.convertToLabel.text = self.convertFromRoman ? "Arabic" : "Roman"
-        self.convertFromLabel.text = self.convertFromRoman ? "Roman" : "Arabic"
+        self.convertToLabel.text = self.convertFromRoman ? NSLocalizedString("Arabic", comment: "Arabic") : NSLocalizedString("Roman", comment: "Roman")
+        self.convertFromLabel.text = self.convertFromRoman ? NSLocalizedString("Roman", comment: "Roman") : NSLocalizedString("Arabic", comment: "Arabic")
     }
     
     
@@ -39,9 +39,9 @@ extension ConvertViewController: UITextFieldDelegate {
         if (textField.returnKeyType == UIReturnKeyType.go) {
             if let inputNumber = inputTextField.text {
                 if convertFromRoman {
-                    resultLabel.text = self.converter.validRoman(inputNumber.uppercased()) ? self.converter.convertToDecimal(inputNumber).description : "Enter a valid roman number"
+                    resultLabel.text = self.converter.validRoman(inputNumber.uppercased()) ? self.converter.convertToDecimal(inputNumber).description : NSLocalizedString("Enter a valid roman number", comment: "Enter a valid roman number warning")
                 } else {
-                    resultLabel.text = self.converter.validDecimal(inputNumber) ?self.converter.convertToRoman(Int(inputNumber)!) : "Enter a valid number"
+                    resultLabel.text = self.converter.validDecimal(inputNumber) ?self.converter.convertToRoman(Int(inputNumber)!) : NSLocalizedString("Enter a valid number", comment: "Enter a valid number warning")
                 }
             }
         }

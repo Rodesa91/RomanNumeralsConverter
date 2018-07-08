@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Roman"; ObjectID = "PKp-cP-6vd"; */
+"PKp-cP-6vd.text" = "Romano";
+
+/* Class = "UILabel"; text = "arabic"; ObjectID = "hNe-gV-GNg"; */
+"hNe-gV-GNg.text" = "Arabico";
+
+/* Class = "UILabel"; text = "Roman Number Converter"; ObjectID = "hnb-cH-Efd"; */
+"hnb-cH-Efd.text" = "Convertidor de números romanos";
+
+/* Class = "UITextField"; placeholder = "Ingresar numero"; ObjectID = "jcC-Lg-eIq"; */
+"jcC-Lg-eIq.placeholder" = "Ingresar numero";

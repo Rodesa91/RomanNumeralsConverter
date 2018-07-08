@@ -26,8 +26,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZr-1V-RgS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roman Number Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnb-cH-Efd">
-                                        <rect key="frame" x="46" y="43" width="283.5" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roman Number Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hnb-cH-Efd">
+                                        <rect key="frame" x="10" y="43" width="355" height="17"/>
                                         <fontDescription key="fontDescription" name="Trajan-Regular" family="Trajan-Regular" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -35,7 +35,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.90240234374999995" green="0.16578315877039551" blue="0.085934863073936413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="hnb-cH-Efd" firstAttribute="centerX" secondItem="kZr-1V-RgS" secondAttribute="centerX" id="984-hO-OPS"/>
+                                    <constraint firstItem="hnb-cH-Efd" firstAttribute="leading" secondItem="kZr-1V-RgS" secondAttribute="leading" constant="10" id="8pc-KK-tT1"/>
+                                    <constraint firstAttribute="trailing" secondItem="hnb-cH-Efd" secondAttribute="trailing" constant="10" id="9im-fi-CWL"/>
                                     <constraint firstAttribute="bottom" secondItem="hnb-cH-Efd" secondAttribute="bottom" constant="10" id="W27-oa-XhD"/>
                                     <constraint firstAttribute="height" constant="70" id="m4x-Q7-pDf"/>
                                 </constraints>
@@ -96,7 +97,7 @@
                                     <constraint firstItem="dii-Ty-fwJ" firstAttribute="centerX" secondItem="yke-EN-Yhx" secondAttribute="centerX" id="zDI-6p-umT"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Ingresar numero" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcC-Lg-eIq">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcC-Lg-eIq">
                                 <rect key="frame" x="10" y="135" width="355" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

@@ -8,7 +8,7 @@ Implemented in Swift 4 using Xcode 9.
     - Unit Test
     - Custom Font
     - Regular expression
-    - Internationalization
+    - Localization
     
  
 
